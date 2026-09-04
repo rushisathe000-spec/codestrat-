@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="CodeStart - Simple coding tutorials for beginners">
+<title>CodeStart | Learn Coding</title>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+font-family:Arial,sans-serif;
+background:#0b0f14;
+color:#f5f7fa;
+line-height:1.6
+}
+.container{max-width:1100px;margin:auto;padding:0 20px}
+header{
+position:sticky;top:0;z-index:10;
+background:#0b0f14ee;
+backdrop-filter:blur(10px);
+border-bottom:1px solid #202832
+}
+nav{
+height:70px;display:flex;align-items:center;
+justify-content:space-between
+}
+.logo{font-size:25px;font-weight:bold;color:white;text-decoration:none}
+.logo span{color:#5eead4}
+nav a{color:#aeb8c4;text-decoration:none;margin-left:25px}
+nav a:hover{color:#5eead4}
+
+.hero{
+min-height:620px;display:flex;align-items:center;
+justify-content:space-between;gap:50px
+}
+.hero-text{max-width:600px}
+.badge{
+display:inline-block;padding:7px 13px;border:1px solid #29343f;
+border-radius:20px;color:#5eead4;font-size:13px;margin-bottom:20px
+}
+h1{font-size:58px;line-height:1.05;margin-bottom:22px}
+h1 span{color:#5eead4}
+.hero p{font-size:19px;color:#aeb8c4}
+.buttons{margin-top:30px}
+.btn{
+display:inline-block;text-decoration:none;padding:13px 20px;
+border-radius:8px;margin-right:10px;font-weight:bold
+}
+.primary{background:#5eead4;color:#07100e}
+.secondary{border:1px solid #33404c;color:white}
+
+.code{
+background:#111820;border:1px solid #29343f;border-radius:14px;
+padding:25px;width:430px;box-shadow:0 20px 60px #0008
+}
+.dots{display:flex;gap:7px;margin-bottom:20px}
+.dots i{width:10px;height:10px;border-radius:50%;background:#394550}
+pre{color:#d9e2ec;overflow:auto}
+.green{color:#5eead4}
+
+section{padding:80px 0}
+.title{text-align:center;margin-bottom:40px}
+.title h2{font-size:38px}
+.title p{color:#8f9aa7}
+
+.grid{
+display:grid;grid-template-columns:repeat(4,1fr);gap:18px
+}
+.card{
+background:#111820;border:1px solid #202b35;
+padding:25px;border-radius:12px;
+transition:.2s
+}
+.card:hover{transform:translateY(-5px);border-color:#5eead4}
+.card .icon{font-size:30px;margin-bottom:12px}
+.card h3{margin-bottom:8px}
+.card p{color:#8f9aa7}
+
+.posts{
+display:grid;grid-template-columns:repeat(3,1fr);gap:20px
+}
+.post{
+background:#111820;border:1px solid #202b35;
+padding:25px;border-radius:12px
+}
+.tag{color:#5eead4;font-size:12px;font-weight:bold}
+.post h3{margin:12px 0}
+.post p{color:#8f9aa7}
+.post a{display:inline-block;margin-top:15px;color:#5eead4;text-decoration:none}
+
+.about{
+background:#111820;border-top:1px solid #202b35;
+border-bottom:1px solid #202b35;text-align:center
+}
+.about p{max-width:700px;margin:15px auto;color:#9ba6b2}
+
+footer{padding:30px 0;color:#7f8994;text-align:center}
+
+@media(max-width:800px){
+.hero{flex-direction:column;justify-content:center;text-align:center;padding-top:70px}
+h1{font-size:44px}
+.code{width:100%}
+.grid{grid-template-columns:repeat(2,1fr)}
+.posts{grid-template-columns:1fr}
+nav a{display:none}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="container">
+<nav>
+<a href="#" class="logo">Code<span>Start</span></a>
+<div>
+<a href="#topics">Topics</a>
+<a href="#blog">Blog</a>
+<a href="#about">About</a>
+</div>
+</nav>
+</div>
+</header>
+
+<main>
+
+<section class="hero container">
+<div class="hero-text">
+<div class="badge">CODING • SIMPLIFIED</div>
+<h1>Learn coding.<br><span>Build something.</span></h1>
+<p>
+Beginner-friendly coding tutorials, examples and projects
+designed to make programming easier to understand.
+</p>
+
+<div class="buttons">
+<a href="#blog" class="btn primary">Start Learning →</a>
+<a href="#topics" class="btn secondary">Explore Topics</a>
+</div>
+</div>
+
+<div class="code">
+<div class="dots"><i></i><i></i><i></i></div>
+<pre><code><span class="green">#include</span> &lt;stdio.h&gt;
+
+<span class="green">int</span> main() {
+    printf(<span class="green">"Hello, CodeStart!"</span>);
+    <span class="green">return</span> 0;
+}</code></pre>
+</div>
+</section>
+
+<section id="topics">
+<div class="container">
+<div class="title">
+<h2>Learn by Topic</h2>
+<p>Choose your starting point</p>
+</div>
+
+<div class="grid">
+<div class="card">
+<div class="icon">C</div>
+<h3>C Programming</h3>
+<p>Learn variables, loops, functions and fundamentals.</p>
+</div>
+
+<div class="card">
+<div class="icon">C++</div>
+<h3>C++</h3>
+<p>Understand modern programming concepts step by step.</p>
+</div>
+
+<div class="card">
+<div class="icon">&lt;/&gt;</div>
+<h3>HTML & CSS</h3>
+<p>Build beautiful websites from scratch.</p>
+</div>
+
+<div class="card">
+<div class="icon">Py</div>
+<h3>Python</h3>
+<p>Start programming with simple Python projects.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="blog">
+<div class="container">
+<div class="title">
+<h2>Latest Articles</h2>
+<p>Simple explanations for beginners</p>
+</div>
+
+<div class="posts">
+
+<article class="post">
+<div class="tag">BEGINNER</div>
+<h3>What Is Coding?</h3>
+<p>
+Coding means giving instructions to a computer using a programming
+language. Start small and practice every day.
+</p>
+<a href="#">Read article →</a>
+</article>
+
+<article class="post">
+<div class="tag">C PROGRAMMING</div>
+<h3>5 C Programs Every Beginner Should Try</h3>
+<p>
+Practice variables, input, conditions and loops with small programs
+that build your fundamentals.
+</p>
+<a href="#">Read article →</a>
+</article>
+
+<article class="post">
+<div class="tag">WEB DEVELOPMENT</div>
+<h3>Build Your First HTML Page</h3>
+<p>
+Learn the basic structure of an HTML document and create your first
+web page.
+</p>
+<a href="#">Read article →</a>
+</article>
+
+</div>
+</div>
+</section>
+
+<section id="about" class="about">
+<div class="container">
+<h2>About CodeStart</h2>
+<p>
+CodeStart is
